@@ -22,7 +22,8 @@ function Revealtospan(){
 
 Revealtospan()
 
-var tl = gsap.timeline();
+function loader(){
+    var tl = gsap.timeline();
 
 tl
 .from(".child span",{
@@ -59,3 +60,15 @@ tl
     delay:-.4,
     ease: Circ.easeInOut
 })
+
+.from(".row, .text",{
+    x:"100%",
+    delay:1,
+    duration:1,
+    ease: Power3.easeInOut,
+})
+
+}
+
+loader()
+
