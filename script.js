@@ -61,14 +61,12 @@ tl
     ease: Circ.easeInOut
 })
 
-.from(".row, .text",{
-    x:"100%",
-    delay:1,
-    duration:1,
-    ease: Power3.easeInOut,
-})
-
 }
 
 loader()
 
+function HomePage(){
+    gsap.set("#nav", {y : "-100%", opacity: 0 })
+}
+
+HomePage()
