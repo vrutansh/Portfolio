@@ -19,21 +19,28 @@ function Revealtospan(){
      elem.appendChild(p)
 });
 }
-
 Revealtospan()
+
+function value(){
+    gsap.set("#nav a", {y : "-100%", opacity: 0 })
+    gsap.set("#home span .child", {y: "100%"})
+    gsap.set("#home .row img ", {opacity: 0})
+
+}
+value()
 
 function loader(){
     var tl = gsap.timeline();
 
 tl
-.from(".child span",{
+.from(" #loader .child span",{
     x: 100,
     stagger:.2,
     duration: 1.4,
     ease: Power3.easeInOut
 })
 
-.to(".parent .child",{
+.to(" #loader .parent .child",{
     y: "-100%",
     duration: 1,
     ease: Circ.easeInOut
@@ -58,15 +65,40 @@ tl
     top: 0,
     duration: .89,
     delay:-.4,
-    ease: Circ.easeInOut
+    ease: Circ.easeInOut,
+    onComplete: function(){
+        HomePage()
+    }
 })
 
 }
-
 loader()
 
 function HomePage(){
-    gsap.set("#nav", {y : "-100%", opacity: 0 })
+    
+    var tl = gsap.timeline()
+
+    tl.to("#nav a",{
+        y:0,
+        opacity:1,
+        stagger:.05,
+        ease: Expo.easeInOut
+
+    } )
+
+    tl.to("#home .parent .child",{
+        y: 0,
+        stagger: .1,
+        duration: 1.4,
+        ease: Expo.easeInOut
+        
+    } )
+
+    tl.to("#home .row img",{
+        opacity: 1,
+        delay:-0.5,
+        ease: Expo.easeInOut
+        
+    } )
 }
 
-HomePage()
