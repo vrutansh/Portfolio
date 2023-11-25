@@ -16,7 +16,7 @@ html,body{
  }
 
 #loader{
-    /* display: none; */
+    display: none;
     position: absolute;
     z-index: 999;
     width: 100%;
@@ -58,7 +58,7 @@ html,body{
 
 
 #green{
-    /* display: none; */
+    display: none;
     position: absolute;
     z-index: 999;
     top: 100%;
@@ -86,7 +86,7 @@ html,body{
 
 #home{
     width: 100%;
-    height: 200vh;
+    height: 166vh;
     background-color:#fcfaf8;
     
 }
@@ -174,3 +174,80 @@ html,body{
     margin-top: 0;
     
 }
+
+#imagery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25vw;
+    width: 100%;
+    padding: 0 7vw;
+
+}
+
+#imagery .imglef{
+    width: 30%;
+    height: auto;
+    /* background-color: blueviolet; */
+}
+
+.imglef h1{
+    color: #333;
+    font-size: 2.2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.imglef h1 span{
+    font-style:italic;
+    color: #14CF93;
+    font-family: futura;
+}
+
+.imgrigh{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 60%;
+    
+}
+
+ .imgrigh .imgcontainer{
+    position: absolute;
+    width: 28vw;
+    height: 40vw;
+    filter: grayscale();
+    border-radius: 1vw;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    
+}
+
+.imgrigh .imgcontainer:hover{
+    filter: grayscale(0);
+}
+
+.imgrigh .imgcontainer:nth-child(1){
+    transform: translate(-20%, -8%) rotate(-20deg);
+    background-image: url(https://images.unsplash.com/photo-1603208636533-5b965ef2dc22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI3fHxwb3RyYWl0cyUyMGxhdGlub3xlbnwwfHwwfHx8MA%3D%3D);
+    object-fit: cover;
+    background-position: center;
+    
+}
+
+.imgrigh .imgcontainer:nth-child(2){
+    transform: translate(0%, 0%) rotate(-15deg);
+    background-image: url(https://images.unsplash.com/photo-1536896407451-6e3dd976edd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY0fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D);
+    object-fit: cover;
+    background-position: center;
+   
+}
+
+.imgrigh .imgcontainer:nth-child(3){
+    transform: translate(20%, 10%) rotate(-5deg);
+    background-image: url(https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHB1Z3xlbnwwfHwwfHx8MA%3D%3D);
+    object-fit: cover;
+    background-position: center;
+}  
