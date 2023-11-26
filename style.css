@@ -181,7 +181,7 @@ html,body{
     align-items: center;
     margin-top: 25vw;
     width: 100%;
-    padding: 0 7vw;
+    padding: 0vw 7vw;
 
 }
 
@@ -222,6 +222,7 @@ html,body{
     filter: grayscale();
     border-radius: 1vw;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    z-index: 1;
     
 }
 
@@ -251,3 +252,24 @@ html,body{
     object-fit: cover;
     background-position: center;
 }  
+
+#work{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+}
+
+#work::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -75px;
+    height: 150px;
+    transform: rotate(-180deg);
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size:cover;
+    
+
+}
