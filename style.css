@@ -254,6 +254,7 @@ html,body{
 }  
 
 #work{
+    padding-top: 150px;
     position: relative;
     width: 100%;
     min-height: 70vh;
@@ -271,5 +272,36 @@ html,body{
     background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
     background-size:cover;
     
+}
 
+#work .workrow{
+    padding: 0 12vw;
+    margin-top: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+.workrow h1{
+    font-size: 7vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.workrow span{
+    color: #14CF93;
+    font-style: italic;
+    /* font-family: pp mori ; */
+    font-size: 100px;
+    margin-right:11px;
+    
+}
+
+ #work .workrow i{
+    font-size: 6vw;
+    color:rgb(158, 158, 158);
+    margin-right: 9vw;
+    padding: 0 5vw;
+    
 }
