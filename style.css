@@ -313,3 +313,24 @@ html,body{
     padding: 0 5vw;
     
 }
+
+#images{
+    position: relative;
+    width: 100%;
+}
+
+
+
+#ctn{
+    width: 40%;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 9px;
+
+}
+
+#ctn img{
+    width: 100%;
+    
+    border-radius: 10px;
+}
