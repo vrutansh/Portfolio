@@ -370,7 +370,17 @@ html,body{
 }
 .text1 h1{
     padding: 12vw;
- font-size: 16.5vh;
+ font-size: 15.5vh;
  display: inline-block;
  color: #333;
+}
+
+.images{
+    width: 10rem;
+    height: 10rem;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+  transform: translateY(-28%);
+  right: 8%;
 }
