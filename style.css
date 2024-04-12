@@ -261,7 +261,7 @@ html,body{
     background-position: center;
 }  
 
-#work{
+/* #work{
     padding-top: 150px;
     position: relative;
     width: 100%;
@@ -295,18 +295,18 @@ html,body{
     font-size: 7vw;
     font-weight: 500;
     color: #333;
-}
+} */
 
-.workrow span{
+/* .workrow span{
     color: #14CF93;
     font-style: italic;
     font-family: "AvertaCY W10";
     font-size: 130px;
-    /* margin-right:.1vw; */
+    /* margin-right:.1vw; 
     
-}
+} */
 
- #work .workrow i{
+ /* #work .workrow i{
     font-size: 6vw;
     color:rgb(158, 158, 158);
     margin-right: 9vw;
@@ -318,7 +318,6 @@ html,body{
     position: relative;
     width: 100%;
 }
-
 
 
 #ctn{
@@ -333,4 +332,45 @@ html,body{
     width: 100%;
     
     border-radius: 10px;
+} */
+
+
+ .slider{
+    padding-top: 150px;
+    position: relative;
+    width: 100%;
+    min-height: 125vh;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+}
+
+
+.slider::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -75px;
+    height: 150px;
+    transform: rotate(-180deg);
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    background-size:cover; 
+}
+
+.text1{
+    width: 100%;
+    margin-top: 11vh;
+    margin-left: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: auto;
+    /* padding: 25px; */
+   
+}
+.text1 h1{
+    padding: 12vw;
+ font-size: 16.5vh;
+ display: inline-block;
+ color: #333;
 }
